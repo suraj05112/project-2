@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Gate Tracker App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Main Gate Tracker App</h1>
+
+        <input type="text" id="name" placeholder="Visitor Name">
+        <input type="text" id="purpose" placeholder="Purpose of Visit">
+        <button onclick="addEntry()" class="add-btn">Add Entry</button>
+
+        <h2>Visitor Logs</h2>
+
+        <table id="logTable">
+            <tr>
+                <th>Name</th>
+                <th>Purpose</th>
+                <th>Entry Time</th>
+                <th>Exit Time</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        <div>
+            <div class="stats">
+    <div>Total Entries Today: <span id="entryCount">0</span></div>
+    <div>Total Exits Today: <span id="exitCount">0</span></div>
+</div>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
