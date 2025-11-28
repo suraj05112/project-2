@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: lightseagreen;
+    background-image: url(https://media1.tenor.com/m/O1JpjkcbvZgAAAAC/effectvisual.gif);
+display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#container{
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: top;
+    background-image: url(https://media1.tenor.com/m/O1JpjkcbvZgAAAAC/effectvisual.gif);
+}
+#container i{
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform a ease 0.5s;
+}
